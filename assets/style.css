@@ -173,7 +173,7 @@ a:focus {
   max-width: 820px;
   margin: 1rem auto;
   padding: 0 1rem;
-  text-align: center;
+  text-align: left;
   color: #00026b;
 }
 
@@ -181,9 +181,11 @@ a:focus {
   margin-bottom: 1.2rem;
 }
 
-.page-article h2 {
-  display: inline-block;
-  margin: 2rem auto 1rem;
+.page-article h2,
+.page-article h3 {
+  display: block;
+  width: 100%;
+  margin: 2rem 0 1rem;
   font-size: 1rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
@@ -191,8 +193,7 @@ a:focus {
   color: #00026b;
   padding-bottom: 0.65rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  max-width: min(360px, 100%);
-  text-align: center;
+  text-align: left;
 }
 
 .page-article p {

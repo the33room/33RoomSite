@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bizarre Bazaar — The 33 Room</title>
+  <meta name="description" content="Bizarre Bazaar event page at The 33 Room." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <a href="./"><img src="assets/images/33-Room-Logo-Files-03.png" alt="The 33 Room logo" /></a>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="main-nav" class="site-nav">
+        <a href="./">Home</a>
+        <a href="table-menu.html">Menu</a>
+        <a href="visit-the-room.html">Visit the Room</a>
+        <a href="about.html">About</a>
+        <a href="history.html">History</a>
+        <a href="events.html">Happenings</a>
+        <a href="reserve-the-room.html">Reserve the Room</a>
+        <a href="contact-us.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <article class="page-article page-event">
+        <img src="assets/images/BizarreBazaarText.png" alt="Bizarre Bazaar logo" />
+
+        <p class="event-intro">An eclectic gathering full of books, cocktails, art, local makers, and unexpected treasures.</p>
+
+        <p>More details about the event will be announced soon!</p>
+
+        <h2>Event Details</h2>
+
+        <ul class="event-list">
+          <li><strong>Date:</strong> Saturday, October 3, 2026</li>
+          <li><strong>Time:</strong> 12:00 PM - 8:00 PM</li>
+          <li><strong>Location:</strong> The 33 Room</li>
+        </ul>
+
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <h2>Location</h2>
+          <p>4541 N. Prospect, Suite 33<br />Peoria Heights, Illinois</p>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <p><a href="mailto:the33room@gmail.com">the33room@gmail.com</a><br /><a href="contact-us.html">Get in Touch</a></p>
+        </div>
+        <div>
+          <h2>Follow</h2>
+          <p><a href="https://www.instagram.com/the33room/">Instagram</a><br /><a href="https://www.facebook.com/The33Room/">Facebook</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('#main-nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function() {
+        var shown = nav.classList.toggle('show');
+        toggle.setAttribute('aria-expanded', shown);
+      });
+    });
+  </script>
+</body>
+</html>

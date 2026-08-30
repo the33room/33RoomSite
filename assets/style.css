@@ -202,21 +202,22 @@ a:focus {
 
 .page-event .event-intro {
   font-size: 1.1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.5rem;
 }
 
 .image-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 1.25rem;
-  margin: 2rem 0 2.5rem;
+  margin: 0.5rem 0 0.5rem;
 }
 
 .image-placeholder {
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 260px;
+  aspect-ratio: 4 / 3;
+  min-height: 0;
   border: 1px solid rgba(0, 2, 107, 0.2);
   border-radius: 18px;
   background: linear-gradient(135deg, rgba(0, 2, 107, 0.04), rgba(0, 2, 107, 0.08));
@@ -225,6 +226,42 @@ a:focus {
   letter-spacing: 0.12em;
   font-size: 0.75rem;
   font-weight: 700;
+}
+
+.vendor-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1.7fr) minmax(220px, 1.7fr);
+  gap: 2.5rem;
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.vendor-column {
+  min-width: 0;
+}
+
+.vendor-column-main h3,
+.vendor-column-side h3 {
+  margin-top: 0;
+}
+
+.vendor-column-side {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.vendor-stack {
+  display: block;
+}
+
+.vendor-column ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.vendor-column li {
+  margin-bottom: 0.55rem;
 }
 
 .event-list {
@@ -414,6 +451,12 @@ a:focus {
   display: block;
 }
 
+.list-subheading {
+  display: block;
+  font-size: 0.85rem;
+  color: #555;
+}
+
 @media (max-width: 768px) {
   .site-header {
     flex-direction: column;
@@ -486,5 +529,10 @@ a:focus {
 
   .page-article {
     padding: 2rem 1.5rem;
+  }
+
+  .vendor-columns {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
   }
 }

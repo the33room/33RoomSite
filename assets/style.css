@@ -126,6 +126,27 @@ a:focus {
   height: auto;
 }
 
+.home-banner {
+  padding: 1rem 1.5rem;
+  margin-bottom: 0.75rem;
+  background: #00026b;
+  color: #fff;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.home-banner a {
+  display: block;
+}
+
+.home-banner a:hover,
+.home-banner a:focus {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
 .home-intro {
   padding: 4rem 2rem;
   max-width: 1000px;
